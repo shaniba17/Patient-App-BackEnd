@@ -18,7 +18,7 @@ app.get("/test",(req,res)=>
 app.post("/adminsignup",(req,res)=>{
     let input=req.body
     let hashedPassword=bcrypt.hashSync(input.password,10)
-    //console.log(hashedPassword)
+    console.log(hashedPassword)
     input.password=hashedPassword
     console.log(input)
     let result=new loginmodel(input)
