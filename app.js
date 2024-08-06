@@ -3,7 +3,7 @@ const mongoose=require("mongoose")
 const cors=require("cors")
 const bcrypt=require("bcrypt")
 const jwt=require("jsonwebtoken")
-const loginmodel = require("./admin")
+const loginmodel = require("./models/admin")
 
 mongoose.connect("mongodb+srv://shanibatm17:shaniba17tm@cluster0.h4a3e.mongodb.net/patientdb?retryWrites=true&w=majority&appName=Cluster0")
 const app=express()
